@@ -1,0 +1,12 @@
+/*
+colores,tamaños, etc , la mayoria son heredables, con solo ponerlo en una atiqueta es heredable 
+*/
+.main-bg {
+    background-color: black;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    color: #000000;
+    color: #000000;
+}
+
