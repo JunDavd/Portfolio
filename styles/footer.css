@@ -1,20 +1,37 @@
+/*
 .footer {
     background-color: blue;
     margin-top: 200px;
     margin-bottom: 250px;
     margin-right: 40px;
     margin-left: 20px;
-    /*        T-   R-   B -   L*/
+    /*        T-   R-   B -   
     margin: 200px 40px 250px 20px;
-    /*y - x*/
+    /*y - 
     margin: 200px 40px;
-    /*YX*/
+    /*YX
     margin: 40px;
-    /*paddin-top*/
+    /*paddin-top
     padding: 20px;
     border-color: red;
     border-width: 2px;
     border-style: solid;
-    border: 2px dashed red;
+    border: 2px solid red;
     text-align: center;
+
+    font-size: 1em;
+    font-weight: 400;
+
+    strong {
+        font-size: 1.005rem;
+    }
+
+}
+*/
+
+.footer {
+    font-style: italic;
+    text-align: center;
+    font-weight: 100;
+    padding: 2em 0;
 }

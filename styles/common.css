@@ -1,12 +1,24 @@
 /*
 colores,tamaños, etc , la mayoria son heredables, con solo ponerlo en una atiqueta es heredable 
 */
+:root {
+    --bg-color: #000;
+    --main-text-color: #fff;
+    --main-brand-color: #e50914 ;
+    --main-brand-color-light: #e44c54;
+    --border-size: 16px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif; /* las comillas lo que ahcen es que si no carga una carga la siguiente*/
+}
 .main-bg {
     background-color: black;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0);
-    color: rgb(0, 0, 0);
-    color: #000000;
-    color: #000000;
+    color: white;
+    background-color: var(--bg-color);
+    color: var(--main-text-color);
+}
+
+p {
+    margin: 0;
+    margin-bottom: 1rem;  /* esto deja los margenes hacia abajo*/
 }
 
