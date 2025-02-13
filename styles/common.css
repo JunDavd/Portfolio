@@ -22,3 +22,6 @@ p {
     margin-bottom: 1rem;  /* esto deja los margenes hacia abajo*/
 }
 
+ a {
+    text-decoration: none;
+}
