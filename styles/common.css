@@ -29,3 +29,16 @@ p {
     text-decoration: none;
 }
 
+@media print {
+    body header.header {
+        display: none;
+    
+    }
+    body footer.footer {
+        display: none;
+    }
+    body section.banner {
+        display:none ;
+    }
+}
+
