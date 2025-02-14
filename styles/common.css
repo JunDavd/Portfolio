@@ -16,6 +16,9 @@ colores,tamaños, etc , la mayoria son heredables, con solo ponerlo en una atiqu
     background-color: var(--bg-color);
     color: var(--main-text-color);
 }
+* {
+    box-sizing: border-box;
+}
 
 p {
     margin: 0;
@@ -25,3 +28,4 @@ p {
  a {
     text-decoration: none;
 }
+
