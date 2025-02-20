@@ -25,8 +25,16 @@ p {
     margin-bottom: 1rem;  /* esto deja los margenes hacia abajo*/
 }
 
- a {
+h1, h2, h3, h4, p {
+    margin-top: 0;
+}
+
+a {
     text-decoration: none;
+}
+
+a.hide {
+    display: none;
 }
 
 @media screen and (width > 768px) {
@@ -52,6 +60,13 @@ p {
         header.header, footer.footer, section.banner {
             display: none;
         }
+    }
+}
+
+@media screen and (prefers-color-scheme: light)  {
+    :roor{
+        --bg-color: #fff;
+        --main-text-color: #000;
     }
 }
 
