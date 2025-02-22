@@ -6,7 +6,53 @@
     <title>Codeflix | signIn</title>
 </head>
 <body>
-    <h1>CodeFlix signin.html</h1>
-    <a href="./">Home</a>
+    <h1>signin.html</h1>
+    <form action="./registro" method="post">
+        <div>
+            <label for="mail">Add your email</label>
+            <input type="email" name="email" id="mail" autocomplete="off" value="test@test.com">
+        </div>
+        <div>
+            <label for="password">Add your password</label>
+            <input type="password" name="password" id="password" placeholder="add your password">        
+        </div>
+        <div>
+            <label for="tel"></label>Enter your phone number
+            <input type="tel" name="phone" id="telephone" autocomplete="off">
+        </div>
+        <div>
+            <label for="profile">Choose a profile picture</label>
+            <input type="file" name="profile" id="profile" accept="image/png">
+        </div>
+        <fieldset>
+            <legend>Fav programming language</legend>
+            <label for="js">Js</label>
+            <input type="radio" name="fav" id="js" value="js" checked>
+            <label for="python">Python</label>
+            <input type="radio" name="fav" id="python" value="python">
+        </fieldset>
+        <!--
+        <fieldset>
+            <legend>Want to learn</legend>
+            <label for="jsc">Js</label>
+            <input type="checkbox" name="learn" id="js" value="js" checked>
+            <label for="python">Python</label>
+            <input type="checkbox" name="learn" id="python" value="python">
+            <label for="python">.Net</label>
+            <input type="checkbox" name="learn" id="net" value="net">
+        </fieldset>
+        -->
+        <div>
+            <label for="remember">User bio</label>
+            <textarea name="bio" id="bio" rows="6"></textarea>
+        </div>
+        <div>
+            <label for="remember">Remember me</label>
+            <input type="checkbox" name="remember" id="remember">
+        </div>
+        <div>
+            <button>Guardar</button>      
+        </div>
+    </form> 
 </body>
 </html>

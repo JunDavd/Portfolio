@@ -6,6 +6,9 @@
     padding: 0.7rem;
     display: inline-block;
     border-radius: 5px;
+    border:  1px solid var(--main-brand-color);
+    transition-property: background-color;
+    transition-duration: 10s;
 }
 
 .heading-1 {
