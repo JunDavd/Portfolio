@@ -10,15 +10,22 @@
     <form action="./registro" method="post">
         <div>
             <label for="mail">Add your email</label>
-            <input type="email" name="email" id="mail" autocomplete="off" value="test@test.com">
+            <input required type="email" name="email" id="mail" autocomplete="off" value="test@test.com">
         </div>
         <div>
             <label for="password">Add your password</label>
-            <input type="password" name="password" id="password" placeholder="add your password">        
+            <input 
+            required 
+            readonly
+            type="password" 
+            name="password" 
+            id="password" 
+            placeholder="add your password"
+            >        
         </div>
         <div>
             <label for="tel"></label>Enter your phone number
-            <input type="tel" name="phone" id="telephone" autocomplete="off">
+            <input required type="tel" name="phone" id="telephone" autocomplete="off" pattern="">
         </div>
         <div>
             <label for="profile">Choose a profile picture</label>
@@ -64,7 +71,7 @@
         <div>
             <input type="reset" name="" id="" value="guardar">
             <button type="submit">Guardar</button>      
-        </div>
+        </div>  
     </form> 
 </body>
 </html>
