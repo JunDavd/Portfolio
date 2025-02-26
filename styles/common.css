@@ -7,6 +7,7 @@ colores,tamaños, etc , la mayoria son heredables, con solo ponerlo en una atiqu
     --main-brand-color: #e50914 ;
     --main-brand-color-light: #e44c54;
     --border-size: 16px;
+    --input-bg-color: #333;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif; /* las comillas lo que ahcen es que si no carga una carga la siguiente*/
 }

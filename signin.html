@@ -4,74 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codeflix | signIn</title>
+    <link rel="stylesheet" href="./styles/normalize.css"> <!--importante que siempre este al principio para que no sobreescriba otros estilos-->
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/componentes.css">
+    <link rel="stylesheet" href="./styles/signin.css">
 </head>
-<body>
-    <h1>signin.html</h1>
-    <form action="./registro" method="post">
-        <div>
-            <label for="mail">Add your email</label>
-            <input required type="email" name="email" id="mail" autocomplete="off" value="test@test.com">
-        </div>
-        <div>
-            <label for="password">Add your password</label>
-            <input 
-            required 
-            readonly
-            type="password" 
-            name="password" 
-            id="password" 
-            placeholder="add your password"
-            >        
-        </div>
-        <div>
-            <label for="tel"></label>Enter your phone number
-            <input required type="tel" name="phone" id="telephone" autocomplete="off" pattern="">
-        </div>
-        <div>
-            <label for="profile">Choose a profile picture</label>
-            <input type="file" name="profile" id="profile" accept="image/png">
-        </div>
-        <fieldset>
-            <legend>Fav programming language</legend>
-            <label for="js">Js</label>
-            <input type="radio" name="fav" id="js" value="js" checked>
-            <label for="python">Python</label>
-            <input type="radio" name="fav" id="python" value="python">
-        </fieldset>
-        <!--
-        <fieldset>
-            <legend>Want to learn</legend>
-            <label for="jsc">Js</label>
-            <input type="checkbox" name="learn" id="js" value="js" checked>
-            <label for="python">Python</label>
-            <input type="checkbox" name="learn" id="python" value="python">
-            <label for="python">.Net</label>
-            <input type="checkbox" name="learn" id="net" value="net">
-        </fieldset>
-        -->
-        <div>
-            <label for="remember">User bio</label>
-            <textarea name="bio" id="bio" rows="6"></textarea>
-        </div>
-        <div>
-            <button type="button">click</button>      
-        </div>
-        <div>
-            <label for="country">Country</label>
-            <select name="country" id="country">
-                <option value="es">España</option>
-                <option value="co">Colombia</option>
-                <option value="usa">Usa</option>
-            </select>
-        </div>
-        <div>
-            <label for="remember">Remember me</label>
-            <input type="checkbox" name="remember" id="remember">
-        </div>
-        <div>
-            <input type="reset" name="" id="" value="guardar">
-            <button type="submit">Guardar</button>      
-        </div>  
-    </form> 
+<body class="main-bg container">
+    <main class="card">
+        <h1>signin.html</h1>
+        <form action="./registro" method="post" novalidate>
+            <div class="form-element">
+                <label for="mail">Add your email</label>
+                <input required type="email" name="email" id="mail" autocomplete="off" value="test@test.com">
+            </div>
+            <div class="form-element">
+                <label for="password">Add your password</label>
+                <input 
+                required 
+                readonly
+                type="password" 
+                name="password" 
+                id="password" 
+                placeholder="add your password"
+                >        
+            </div>
+            <div class="form-element">
+                <label for="tel"></label>Enter your phone number
+                <input  
+                type="tel" 
+                name="telephone" 
+                id="tel" 
+                autocomplete="off" 
+                placeholder="123-456-7891"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                title="Expected format: 123-123-2345"
+                required
+                >
+            
+            </div>
+            <div class="form-element">
+                <label for="profile">Choose a profile picture</label>
+                <input type="file" name="profile" id="profile" accept="image/png">
+            </div>
+            <fieldset>
+                <legend>Fav programming language</legend>
+                <label for="js">Js</label>
+                <input type="radio" name="fav" id="js" value="js" checked>
+                <label for="python">Python</label>
+                <input type="radio" name="fav" id="python" value="python">
+            </fieldset>
+            <!--
+            <fieldset>
+                <legend>Want to learn</legend>
+                <label for="jsc">Js</label>
+                <input type="checkbox" name="learn" id="js" value="js" checked>
+                <label for="python">Python</label>
+                <input type="checkbox" name="learn" id="python" value="python">
+                <label for="python">.Net</label>
+                <input type="checkbox" name="learn" id="net" value="net">
+            </fieldset>
+            -->
+            <div class="form-element">
+                <label for="remember">User bio</label>
+                <textarea placeholder="max 10" maxlength="10" name="bio" id="bio" rows="6"></textarea>
+            </div>
+            <div>
+                <button type="button">click</button>      
+            </div>
+            <div>
+                <label for="country">Country</label>
+                <select required name="country" id="country">
+                    <option value="es">España</option>
+                    <option value="co">Colombia</option>
+                    <option value="usa">Usa</option>
+                </select>
+            </div>
+            <div>
+                <label for="remember">Remember me</label>
+                <input type="checkbox" name="remember" id="remember">
+            </div>
+            <div>
+                <input class="btn" type="reset">
+                <button class="btn" type="submit">Guardar</button>      
+            </div>  
+        </form> 
+    </main>
 </body>
 </html>
