@@ -10,15 +10,3 @@
     border-radius: 4px;
 }
 
-.form-element {
-    display: flex;
-    flex-direction: column;
-    label {
-        margin-bottom: 0.5rem;
-    }
-    input {
-        border: none;
-        padding: 1rem;
-        border-radius: 5px;
-    }
-}

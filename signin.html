@@ -42,7 +42,7 @@
                 >
             
             </div>
-            <div class="form-element">
+            <div class="file-element">
                 <label for="profile">Choose a profile picture</label>
                 <input type="file" name="profile" id="profile" accept="image/png">
             </div>
@@ -64,14 +64,14 @@
                 <input type="checkbox" name="learn" id="net" value="net">
             </fieldset>
             -->
-            <div class="form-element">
+            <div class="form-element" >
                 <label for="remember">User bio</label>
                 <textarea placeholder="max 10" maxlength="10" name="bio" id="bio" rows="6"></textarea>
             </div>
-            <div>
+            <!-- <div>
                 <button type="button">click</button>      
-            </div>
-            <div>
+            </div> -->
+            <div class="form-element">
                 <label for="country">Country</label>
                 <select required name="country" id="country">
                     <option value="es">España</option>
@@ -79,12 +79,12 @@
                     <option value="usa">Usa</option>
                 </select>
             </div>
-            <div>
+            <div class="form-element row">
                 <label for="remember">Remember me</label>
                 <input type="checkbox" name="remember" id="remember">
             </div>
             <div>
-                <input class="btn" type="reset">
+                <input class="btn secondary" type="reset" value="Reset">
                 <button class="btn" type="submit">Guardar</button>      
             </div>  
         </form> 
