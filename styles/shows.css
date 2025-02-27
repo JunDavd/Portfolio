@@ -1,0 +1,31 @@
+figure {
+    margin: 0;
+}
+
+.list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    img{
+        width: 100%;
+    }
+    /* display: flex;
+    gap: 10px;
+    flex-wrap:wrap ;
+    li{
+        width: calc(50% - 20px);
+    } */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+.new-shows{
+    margin-bottom: 15px;
+}
+
+/* @media screen and (width > 768px) {
+    .list{
+        grid-template-columns: repeat(4, 1fr);
+    }
+} */
