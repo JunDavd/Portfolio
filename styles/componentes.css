@@ -7,12 +7,24 @@
     display: inline-block;
     border-radius: 5px;
     border:  1px solid var(--main-brand-color);
-    transition-property: background-color;
-    transition-duration: 10s;
-    border: 1px solid var(--main-brand-color);
+    /* transition-property: background-color;
+    transition-duration: 10s; */
+    cursor: pointer;
     &.secondary {
         background-color: transparent;
         border: 1px solid var(--main-text-color);
+    }
+}
+
+@media screen and (hover: hover) {
+    .btn {
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: var(--main-brand-color-light);
+    }
+    .btn.secondary:hover {
+        background-color: transparent;
     }
 }
 
