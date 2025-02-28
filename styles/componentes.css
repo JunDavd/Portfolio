@@ -9,11 +9,16 @@
     border:  1px solid var(--main-brand-color);
     /* transition-property: background-color;
     transition-duration: 10s; */
-    cursor: pointer;
+    transition: background-color 0.4s;
     &.secondary {
         background-color: transparent;
         border: 1px solid var(--main-text-color);
     }
+    /* &.error {
+        width: 72.925px;
+        background-color: var(--main-brand-color) ;
+        transition: width 4s;
+    } */
 }
 
 @media screen and (hover: hover) {
@@ -23,6 +28,10 @@
     .btn:hover {
         background-color: var(--main-brand-color-light);
     }
+    /* .btn.error:hover{
+        width: 100px;
+        background-color: yellow;
+    } */
     .btn.secondary:hover {
         background-color: transparent;
     }

@@ -11,6 +11,17 @@ colores,tamaños, etc , la mayoria son heredables, con solo ponerlo en una atiqu
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif; /* las comillas lo que ahcen es que si no carga una carga la siguiente*/
 }
+
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
+
 .main-bg {
     background-color: black;
     color: white;
