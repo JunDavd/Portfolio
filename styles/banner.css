@@ -1,6 +1,7 @@
 .banner {
     text-align: center;
-    height: 75vh;
+    /* height: 75vh; */
+    height: 80vh;
     position: relative;
     display: flex;
     align-items: center;
