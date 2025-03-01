@@ -9,7 +9,7 @@ colores,tamaños, etc , la mayoria son heredables, con solo ponerlo en una atiqu
     --border-size: 16px;
     --input-bg-color: #333;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif; /* las comillas lo que ahcen es que si no carga una carga la siguiente*/
+    font-family: "Roboto",Arial, Helvetica, sans-serif; /* las comillas lo que ahcen es que si no carga una carga la siguiente*/
 }
 
 .sr-only:not(:focus):not(:active) {
